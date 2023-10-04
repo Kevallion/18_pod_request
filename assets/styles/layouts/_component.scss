@@ -92,6 +92,13 @@ main{
                 font-weight: 100px;
                 color: $color4;
             }
+
+            #emailInfo{
+                font-weight: 700;
+                color:#FB3E3E;
+                display: block;
+                margin: 10px 32px 0;
+            }
         
             input[type="submit"]{
                 @media screen and (max-width:572px) {

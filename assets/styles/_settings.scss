@@ -52,6 +52,7 @@ body{
     line-height: 28px;
     font-size: 18px;
     color: $color5;
+
     img{
         object-fit: contain;
        }
@@ -89,10 +90,10 @@ body{
     &::after{
 
         @media screen and (max-width:960px) {
-        position: fixed;
+        position: absolute;
         width: auto;
          left: 30px;
-         bottom: 0;
+         bottom: -153px;
         }
 
         @media screen and (max-width:572px) {
