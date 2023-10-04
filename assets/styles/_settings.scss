@@ -1,0 +1,136 @@
+/***************** COLORS *****************/
+
+$color1:#54E6AF;
+$color2:#2C344B;
+$color3:#121725;
+$color4:#5A668A;
+$color5:#C2CBE5;
+$white1:#FFFFFF;
+
+/***************** FONTS *****************/
+
+@font-face {
+    font-family: "chivo";
+    src: url(../fonts/Chivo-VariableFont_wght.ttf);
+}
+
+$font1: chivo, sans-serif;
+
+/***************** GENERAL PARAMETERS *****************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+input{
+    border-style: none;
+}
+
+input[type="email"]{
+    outline: none;
+    appearance: none;
+}
+
+body{
+    
+    @media screen and (max-width:572px) {
+        text-align: center;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    overflow-x: hidden;
+    position: relative;
+    background: $color3;
+    font-family: $font1;
+    font-weight:100;
+    line-height: 28px;
+    font-size: 18px;
+    color: $color5;
+    img{
+        object-fit: contain;
+       }
+
+    &::before{
+        
+        
+
+        @media screen and (max-width:960px) {
+            background-position: -320px;
+            height: 100%; 
+        }
+
+        @media screen and (max-width:572px) {
+            position: fixed;
+            background-position:center;
+            opacity:0.05;
+            height: 100vh;
+            width: 100%;
+        }
+
+        position: absolute;
+        z-index: -1;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background-image: url("../images/desktop/image-host.jpg") ; 
+        background-size:cover;
+        background-repeat: no-repeat;
+        width: 65%;
+        height: 83%; 
+        display: block; 
+    }
+    
+    &::after{
+
+        @media screen and (max-width:960px) {
+        position: fixed;
+        width: auto;
+         left: 30px;
+         bottom: 0;
+        }
+
+        @media screen and (max-width:572px) {
+            display: none;
+           }
+        display: block;
+        position: absolute;
+        content: "";
+        z-index: 2;
+        right: 0;
+        bottom: -52px;
+        background-image: url("../images/desktop/bg-pattern-dots.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 232px;
+        height: 104px;
+    }
+}
+
+
+h1{
+    
+    @media screen and (max-width:960px) {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    @media screen and (max-width:572px) {
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    font-weight:100;
+    font-size: 52px;
+    line-height: 62px;
+    text-transform: uppercase;
+    color: $color1;
+    span{
+        color: $white1;
+    }
+}

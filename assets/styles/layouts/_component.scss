@@ -1,0 +1,140 @@
+header{
+    @media screen and (max-width:960px) {
+        margin:0 39px 152px;
+        padding-top: 50px;
+    }
+
+    @media screen and (max-width:572px) {
+        padding-top: 62px;
+       margin: 0 auto 57px ;
+     }
+
+     
+    margin:0 165px 103px;
+    padding-top: 102px;
+}
+
+main{
+    @media screen and (max-width:960px) {
+        margin:0 39px 0;
+        max-width: 635px;
+    }
+
+    @media screen and (max-width:572px) {
+        background: none;
+        margin: 0 24px ;
+     }
+
+    margin: 0 165px  130px;
+   
+    background: $color3;
+    max-width: 723px;
+    min-height: 509px;
+    position: relative;
+
+    h1{
+        @media screen and (max-width:960px) {
+            margin-top: 93px;
+        }
+        margin-top:88px;
+        display: inline-block;
+    }
+
+    p{
+        @media screen and (max-width:572px) {
+           margin: 16px 0 33px ;
+           max-width: 100%;
+         }
+
+        max-width: 445px;
+        margin: 24px 0 40px;
+    }
+
+    .footer{
+        @media screen and (max-width:572px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column-reverse;
+
+        }
+
+        form{
+
+            @media screen and (max-width:572px) {
+                margin-top: 48px;
+                min-width: 327px;
+                max-width: 100%;
+            }
+
+            position: relative;
+            width: 90%;
+            max-width: 427px;
+            margin-bottom: 64px;
+    
+            input{
+                font-family: $font1;
+                font-weight: 700;
+            }
+    
+     
+            input[type="email"]{
+                color: $white1;
+                width: 100%;
+                // max-width: 427px - 64px;
+                min-height: 56px;
+                border-radius: 28px;
+                background: $color2;
+                padding: 14px 32px;
+            }
+            
+            input[type="email"]::placeholder{
+                font-family: $font1;
+                font-weight: 100px;
+                color: $color4;
+            }
+        
+            input[type="submit"]{
+                @media screen and (max-width:572px) {
+                    position: relative;
+                    margin-top: 16px;
+                    width: 100%;
+                    min-height: 56px;
+                    right: auto;
+                    top: auto;
+                }
+                cursor: pointer;
+                z-index: 2;
+                position: absolute;
+                right: 5px;
+                top: 5px;
+                width: 162px;
+                min-height: 46px;
+                background: $color1;
+                border-radius: 28px;
+                transition: 0.4s ease;
+                &:hover{
+                    background: $color5;
+                }
+            }
+        }
+    
+        ul{
+            @media screen and (max-width:572px) {
+                img{
+                    height: 17px;
+                    max-width: 77px;
+                }
+                min-height: 17px;
+                height: 17px;
+            }
+            min-height: 30px;
+            max-width: 536px;
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+}
