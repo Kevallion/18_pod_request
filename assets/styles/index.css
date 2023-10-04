@@ -212,7 +212,10 @@ main .footer form input {
   font-family: chivo, sans-serif;
   font-weight: 700;
 }
-main .footer form input[type=email] {
+main .footer form div {
+  position: relative;
+}
+main .footer form div input[type=email] {
   color: #FFFFFF;
   width: 100%;
   min-height: 56px;
@@ -220,36 +223,45 @@ main .footer form input[type=email] {
   background: #2C344B;
   padding: 14px 32px;
 }
-main .footer form input[type=email]::-webkit-input-placeholder {
+main .footer form div input[type=email]::-webkit-input-placeholder {
   font-family: chivo, sans-serif;
   font-weight: 100px;
   color: #5A668A;
 }
-main .footer form input[type=email]::-moz-placeholder {
+main .footer form div input[type=email]::-moz-placeholder {
   font-family: chivo, sans-serif;
   font-weight: 100px;
   color: #5A668A;
 }
-main .footer form input[type=email]:-ms-input-placeholder {
+main .footer form div input[type=email]:-ms-input-placeholder {
   font-family: chivo, sans-serif;
   font-weight: 100px;
   color: #5A668A;
 }
-main .footer form input[type=email]::-ms-input-placeholder {
+main .footer form div input[type=email]::-ms-input-placeholder {
   font-family: chivo, sans-serif;
   font-weight: 100px;
   color: #5A668A;
 }
-main .footer form input[type=email]::placeholder {
+main .footer form div input[type=email]::placeholder {
   font-family: chivo, sans-serif;
   font-weight: 100px;
   color: #5A668A;
 }
-main .footer form #emailInfo {
+main .footer form div #emailInfo {
+  position: absolute;
   font-weight: 700;
   color: #FB3E3E;
   display: block;
   margin: 10px 32px 0;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  opacity: 0;
+}
+@media screen and (max-width: 572px) {
+  main .footer form div #emailInfo {
+    top: -40px;
+  }
 }
 main .footer form input[type=submit] {
   cursor: pointer;

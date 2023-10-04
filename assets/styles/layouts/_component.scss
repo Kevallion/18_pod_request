@@ -76,29 +76,38 @@ main{
                 font-weight: 700;
             }
     
-     
-            input[type="email"]{
-                color: $white1;
-                width: 100%;
-                // max-width: 427px - 64px;
-                min-height: 56px;
-                border-radius: 28px;
-                background: $color2;
-                padding: 14px 32px;
+            div{
+                position: relative;
+                input[type="email"]{
+                    color: $white1;
+                    width: 100%;
+                    // max-width: 427px - 64px;
+                    min-height: 56px;
+                    border-radius: 28px;
+                    background: $color2;
+                    padding: 14px 32px;
+                }
+                
+                input[type="email"]::placeholder{
+                    font-family: $font1;
+                    font-weight: 100px;
+                    color: $color4;
+                }
+    
+                #emailInfo{
+                    @media screen and (max-width:572px) {
+                       top: -40px;
+                    }
+                    position: absolute;
+                    font-weight: 700;
+                    color:#FB3E3E;
+                    display: block;
+                    margin: 10px 32px 0;
+                    transition: 0.4s ease;
+                    opacity: 0;
+                }
             }
             
-            input[type="email"]::placeholder{
-                font-family: $font1;
-                font-weight: 100px;
-                color: $color4;
-            }
-
-            #emailInfo{
-                font-weight: 700;
-                color:#FB3E3E;
-                display: block;
-                margin: 10px 32px 0;
-            }
         
             input[type="submit"]{
                 @media screen and (max-width:572px) {
